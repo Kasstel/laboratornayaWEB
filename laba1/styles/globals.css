@@ -1,0 +1,38 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  width: 1000px;
+  margin: 0 auto;
+  font-family: Raleway, sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li,
+blockquote {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: inherit;
+  text-underline-offset: 5px;
+}
+
+img {
+  width: 100%;
+}

@@ -1,0 +1,388 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Raleway, sans-serif;
+  background-color: #f5f5f5;
+  margin: 0;
+  display: flex;
+}
+
+.container {
+  width: 1400px;
+  margin: 0 auto;
+  background-color: white;
+  border: 1px solid #ccc;
+}
+
+header {
+  display: flex;
+  justify-content:space-around;
+  align-items: center;
+  background-color: #e0e0e0;
+  padding: 10px;
+  background: linear-gradient(0deg, #fc8507 0%, #ffa218 100%);
+}
+
+.logo {
+
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.header_logo-image{
+  width: 150px;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  background-color: #f0f0f0;
+  border-radius: 8px;
+  padding: 10px;
+  width: 600px;
+}
+
+.input{
+  flex: 1;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  font-size: 16px;
+  background-color: #f0f0f0;
+  color: #555;
+  padding-left: 10px;
+}
+
+.login-input, .password-input {
+  border: 1px solid black;
+  padding-bottom: 5px;
+}
+
+.search-input::placeholder {
+  color: #aaa;
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.site-name {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.login-form {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.form{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 10px;
+}
+
+.login_container{
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  
+}
+
+.login-form input {
+  margin-left: 5px;
+  border-radius: 50px;
+  padding: 2px 10px;
+  background-color: transparent;
+}
+
+button {
+  font-weight: 700;
+  padding: 10px 10px;
+  background-color: transparent;
+  border-radius: 80px;
+  border: 1px solid #fff;
+}
+button:active{
+  background-color: #ccc;
+}
+
+.main-nav {
+  display: flex;
+  justify-content: space-around;
+  background-color: #ccc;
+  text-align: center;
+  padding: 10px;
+}
+
+.main-nav a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+a:active{
+  background-color: #aaa;
+}
+
+aside {
+  width: 150px;
+  float: left;
+  background-color: #f0f0f0;
+  padding: 15px;
+}
+
+aside a {
+  display: block;
+  margin-bottom: 10px;
+  text-decoration: none;
+  color: black;
+}
+
+
+
+main {
+  padding: 20px;
+  min-height: 100%;
+  margin: 0 auto;
+}
+
+.photo {
+  float: left;
+  margin-left: 15px;
+  margin-right: 15px;
+  width: 250px;
+}
+
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  text-align: center;
+  padding: 10px;
+  margin: 20px 0;
+}
+
+h2, h3 {
+  color: darkblue;
+}
+
+p {
+  margin-bottom: 15px;
+  line-height: 1.5;
+}
+
+ul, ol {
+  margin-bottom: 20px;
+}
+
+
+.fixed-contact-form {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  width: 300px;
+}
+
+.contact-form-container {
+  display: none;
+  background-color: white;
+  padding: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  margin-top: 10px;
+}
+
+.contact-form-container h3 {
+  text-align: center;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 5px;
+  color: #333;
+  font-size: 14px;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.contact-form button {
+  width: 100%;
+  padding: 10px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background-color: #218838;
+}
+
+.contact-button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 30px;
+  cursor: pointer;
+  text-align: center;
+  display: block;
+  font-size: 16px;
+}
+
+#toggle {
+  display: none;
+}
+
+#toggle:checked + .contact-button + .contact-form-container {
+  display: block;
+}
+
+
+footer{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  justify-items: center;
+  background-color: #ccc;
+}
+
+.inside_ol{
+  padding-left: 15px;
+}
+
+
+
+
+.overlay {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
+.heading {
+  font-weight: 700;
+  font-size: 40px;
+  text-transform: uppercase;
+  padding: 0 0 27px 40px;
+}
+
+.lots__card-list {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+.lots__card-list-item {
+  flex-grow: 1;
+  width: 334px;
+}
+
+.card-link {
+  text-decoration: none;
+}
+
+.card {
+  min-height: 300px;
+  padding: 51px 40px 48px;
+  background-position: center;
+  background-size:contain;
+  background-repeat: no-repeat;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card__title {
+  font-size: 22px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #ffffff;
+  z-index: 1;
+  text-decoration: underline solid #ffffff;
+}
+
+.card__text {
+  color: #ffffff;
+  z-index: 1;
+}
+
+.card_type_appliances{
+  background-image: url("../images/food_15004343.png");
+}
+
+.card_type_health{
+  background-image: url("../images/lotion_2553576.png");
+}
+
+.card_type_smartphones{
+  background-image: url("../images/tv_7817623.png");
+}
+
+.card_type_garden{
+  background-image: url("../images/lawn-mower_3598106.png");
+}
+
+.card_type_pc{
+  background-image: url("../images/computer_14215440.png");
+}
+
+.card_type_building{
+  background-image: url("../images/repair-tools_11519564.png");
+}
+
+.card_type_fridge1{
+  background-image: url("../images/card-appliances/fridge.jpg");
+}
+
+.card_type_vine{
+  background-image: url("../images/card-appliances/vine.png");
+}
+
+.card_type_wash{
+  background-image: url("https://c.dns-shop.ru/thumb/st1/fit/wm/0/0/c05462666f44307361cae20d90b879af/7a44705eb640ed08c909453f9fb47de0b6352d745e88b0268b79daae58049026.jpg")
+}
+
+.card_type_oven{
+  background-image: url("https://c.dns-shop.ru/thumb/st1/fit/500/500/198f9a0f5e4e4aebea1fe9f87c09bc02/83c1561d7787d2467ddfb1b91d33cf0820fa85bfede9a4170610efb3d3f13ec1.jpg.webp")
+}
+
+.card_type_cleaner{
+  background-image: url("https://c.dns-shop.ru/thumb/st1/fit/500/500/17b7a0c1ec0817a3ce0f266152469124/923979808bea8f56ae0474175eea2929342409e91137a9f6c80a034d63789042.png.webp")
+}
+
+.card_type_blender{
+   background-image: url("https://c.dns-shop.ru/thumb/st1/fit/500/500/6c0857bcfc0d7f9edc45d7522214bc7a/0b18002946ce2e7bdce970781ee5ce463df4126c2686df3a280f8f281e5d7c35.png.webp")
+}
